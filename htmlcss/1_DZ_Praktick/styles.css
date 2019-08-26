@@ -1,0 +1,21 @@
+
+OL { counter-reset: item; padding-left: 10px; }
+LI { display: block }
+LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+
+.leftimg {
+    float: left;
+    margin: 7px 7px 7px 0;
+}
+
+.rightimg {
+    float: right;
+    margin: 7px 0 7px 7px;
+}
+
+.fig {
+    /*text-align: center;*/
+    display: block;
+    margin: 0 auto;
+}

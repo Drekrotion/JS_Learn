@@ -1,0 +1,69 @@
+
+
+html,
+body{
+    height: 100%;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.intro{
+    background: darkturquoise;
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    flex-direction: column;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.head{
+    background: blue;
+    width: 100%;
+    height: 100px;
+}
+
+
+.all{
+    background: grey;
+    flex-grow: 1;
+}
+
+.leftbar{
+    flex-basis: 300px;
+    background: green;
+
+}
+
+.content{
+    width: 100%;
+}
+
+.con1{
+    flex: 0 1 48%;
+    background:orange;
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+
+.con2{
+    flex: 0 1 48%;
+    background: pink;
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+
+
+.footer {
+    background: yellow;
+    width: 100%;
+    height: 100px;
+}

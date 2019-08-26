@@ -1,0 +1,50 @@
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.firstlist:hover{
+    font-style: italic;
+    color rgb(255;0;0);
+}
+
+.mane{
+    color: red;
+    font-style: italic;
+}
+
+.intro1{
+    font-weight: bold;
+    background: wheat;
+    padding: 20px;
+}
+
+
+.liststyle{
+    list-style: square;
+}
+
+ul{
+    color: green;
+}
+
+ol{
+    color: yellow;
+}
+
+.bleckbeck{
+    background: #000;
+}
+
+.thanks{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 5rem;
+}
+
+span{
+    color: red;
+    font-size: 2rem;
+}
+

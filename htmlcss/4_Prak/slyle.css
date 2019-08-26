@@ -1,0 +1,206 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0; !important;
+}
+
+
+/*
+    display settings
+*/
+
+.d-flex{
+    /*webkit-flex зараз не юзають це для мозіли*/
+    display: flex;
+
+}
+
+/*
+    justify-content
+*/
+
+.jf-cont-between{
+    justify-content: space-between;
+}
+
+.jf-cont-around{
+    justify-content: space-around;
+}
+
+/*
+    paddings settings
+*/
+
+
+.p-3,
+.py-3,
+.pt-3{
+    padding-top: 1rem;
+}
+
+.p-3,
+.px-3,
+.pr-3{
+    padding-right: 1rem;
+}
+
+.p-3,
+.py-3,
+.pb-3{
+    padding-bottom: 1rem;
+}
+
+.p-3,
+.px-3,
+.pl-3{
+    padding-left: 1rem;
+}
+
+.p-4,
+.py-4,
+.pt-4{
+    padding-top: 1.5rem;
+}
+
+.p-4,
+.px-4,
+.pr-4{
+    padding-right: 1.5rem;
+}
+
+.p-4,
+.py-4,
+.pb-4{
+    padding-bottom: 1.5rem;
+}
+
+.p-4,
+.px-4,
+.pl-4{
+    padding-left: 1.5rem;
+}
+
+
+/*
+    site-logo settings
+*/
+
+
+.site-logo{
+    font-size: 2rem;
+
+}
+
+
+
+
+.burger{
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+}
+
+.burger::before,
+.burger::after,
+.burger span{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    background: #222;
+}
+
+.burger::before,
+.burger::after{
+    content: "";
+}
+
+.burger::before{
+    top: 0;
+}
+
+.burger span{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger::after{
+    bottom: 0;
+}
+
+/*
+    nav settings
+*/
+
+
+.navbar{
+    list-style: none;
+}
+
+.navbar{
+    font-size: 1.25rem;
+    text-decoration: none;
+
+}
+
+@media screen and (max-height: 576px) {
+
+
+
+.nav{
+    flex-wrap: wrap;
+}
+
+.site-logo{
+    width: calc(100% - 1.5rem);
+}
+
+
+.burger{
+    display: block;
+}
+
+.navbar{
+    width: 100%;
+    flex-direction: column;
+    transition: max-height .33s, visibility .5s, opacity .5s;
+    max-height: 0;
+    overflow-y: hidden;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.navbar.active{
+    max-height: 90vh;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
