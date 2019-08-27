@@ -391,11 +391,14 @@ for (i = 0, j = 0; i < cars.length && j < carUpPorewHp.length; i += 2, j++){
     cars[i].enginePowerHP = carUpPorewHp[j]
 }
 
+/** 1. Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності). */
 
-
-console.log('________________');
+console.log('_______________________');
 cars.forEach(function (value) {
     console.log(value.model);
     console.log(value.enginePowerHP);
 
 });
+
+
+/**  */
