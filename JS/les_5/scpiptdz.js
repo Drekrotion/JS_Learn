@@ -370,35 +370,56 @@ let cars = [
 
 
 
-let carThenYwo = [];
+// /*
+// let carThenYwo = [];
+//
+// for (i = 0; i < cars.length; i += 2){
+//     carThenYwo.push(cars[i].enginePowerHP)
+// }
+//
+// console.log(carThenYwo);
+//
+//
+// let carUpPorewHp = carThenYwo.map(function (value) {
+//     return parseInt(value * 1.1)
+// });
+//
+// console.log(carUpPorewHp);
+//
+//
+//
+// for (i = 0, j = 0; i < cars.length && j < carUpPorewHp.length; i += 2, j++){
+//     cars[i].enginePowerHP = carUpPorewHp[j]
+// }
+//
+// /!** 1. Далі необхідно рати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5%  *!/
+//
+// console.log('_______________________');
+// cars.forEach(function (value) {
+//     console.log(value.model);
+//     console.log(value.enginePowerHP);
+//
+// });
+//
+//
+// /!**  *!/*/
 
-for (i = 0; i < cars.length; i += 2){
-    carThenYwo.push(cars[i].enginePowerHP)
+
+/**  Далі необхідно рати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5% */
+
+
+
+for (i = 0; i < cars.length; i += 2) {
+    cars[i].enginePowerHP += cars[i].enginePowerHP * 0.1;
+    cars[i].price += cars[i].price * 0.05
 }
 
-console.log(carThenYwo);
+
+// cars.forEach(function (value, index) {
+//     console.log(value.enginePowerHP);
+//     console.log(value.price);
+// });
 
 
-let carUpPorewHp = carThenYwo.map(function (value) {
-    return parseInt(value * 1.1)
-});
+/** */
 
-console.log(carUpPorewHp);
-
-
-
-for (i = 0, j = 0; i < cars.length && j < carUpPorewHp.length; i += 2, j++){
-    cars[i].enginePowerHP = carUpPorewHp[j]
-}
-
-/** 1. Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності). */
-
-console.log('_______________________');
-cars.forEach(function (value) {
-    console.log(value.model);
-    console.log(value.enginePowerHP);
-
-});
-
-
-/**  */
