@@ -17,14 +17,18 @@ function userCard(num) {
         },
 
         putCredits: function (cache) {
-            options.balance += cache
+            options.balance += cache;
+
+            histori('putCredits', cache)
         },
 
         takeCredits: function (takeCache) {
-            if(options.balance + options.transactionLimit < takeCache) {
+            if(options.balance < takeCache && options.transactionLimit < takeCache) {
                 throw new Error('No Money!')
             }
-            options.balance -= takeCache
+            options.balance -= takeCache;
+
+            histori('takeCredits',takeCache)
         },
 
         setTransactionLimit: function (upTransactionLimit) {
@@ -32,13 +36,23 @@ function userCard(num) {
         },
 
         transferCredits: function (creditMoney, anotherCard) {
+            if (options.balance < (creditMoney + (creditMoney * 0.05))){
+                throw new Error('No Money!')
+            }
+
             anotherCard.putCredits(creditMoney);
             options.balance -= (creditMoney + (creditMoney * 0.05))
-
         }
+    };
 
 
-
+    function histori(nameTranzikshen, value) {
+        let historiObj = {
+            data: new Date().toISOString(),
+            oprationType: nameTranzikshen,
+            credits: value
+        };
+        options.historyLogs.push(historiObj);
     }
 
 
@@ -61,25 +75,20 @@ card1.setTransactionLimit(5000);
 card1.getCardOptions();
 
 
-console.log('_____________________________');
+console.log('___________________________________________________________________________________');
 
 
 const card2 = userCard(2);
 
+card1.getCardOptions();
 card2.getCardOptions();
+
+console.log('___________________________________________________________________________________');
 
 card1.transferCredits(50, card2);
 
-console.log('_____________________________');
-
-
 card1.getCardOptions();
-
-console.log('_____________________________');
-
-
 card2.getCardOptions();
-
 
 
 

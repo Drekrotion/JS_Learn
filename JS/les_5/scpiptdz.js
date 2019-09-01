@@ -421,5 +421,57 @@ for (i = 0; i < cars.length; i += 2) {
 // });
 
 
-/** */
+/** На відремонтовані автомобілі найняти нових водіїв (переприсвоїти змінну водій). */
+
+
+let newOwners = [
+    {name: 'Yan', age: 28, expYears: 15},
+    {name: 'Igor', age: 73, expYears: 7},
+    {name: 'Ira', age: 24, expYears: 5},
+    {name: 'Ivan', age: 36, expYears: 9},
+    {name: 'Viktor', age: 24, expYears: 4},
+    {name: 'Vova', age: 85, expYears: 5},
+    {name: 'Dima', age: 24, expYears: 5},
+    {name: 'Nastya', age: 15, expYears: 2},
+    {name: 'Petro', age: 24, expYears: 5},
+    {name: 'Karina', age: 18, expYears: 3}
+];
+
+
+for (i = 0, j = 0; i < cars.length, j < newOwners.length; i += 2, j++){
+    cars[i].owner = newOwners[j]
+}
+
+
+
+/** 5. Після того зробити перевірку досвіду ВСІХ наших водіїв. Якщо досвід водія менший за 5 років, але його вік більший за 25, то необідно відправити його на курси підвищення кваліфікації, що збільшить йому досвід на 1 рік. */
+
+
+cars.map( car => {
+    if (car.owner.expYears < 5 && car.owner.age > 25) {
+        car.owner.expYears++
+    }
+
+});
+
+
+
+
+/** 6. Також спробуйте порахувати суму, яку потрібно потратити для покупки всіх цих авто в циклі */
+
+
+// const price = cars.reduce((preVal, curVal) => preVal + curVal.price, 0);
+//
+// console.log(price);
+
+
+let price = cars.reduce(function (prevVal, curVal) {
+    return  prevVal + curVal.price
+
+},0);
+
+console.log(price);
+
+
+
 
