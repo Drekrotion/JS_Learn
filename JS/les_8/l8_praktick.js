@@ -29,9 +29,7 @@ let Solomia = new User('Solomia', 18, 'woman', 51, 174, 'Histori', 'Teacher', tr
 let arr = [Taras, Roman, Oksana, Dima, Solomia];
 
 
-let sortedArr = arr.sort((el1, el2) => {
-   return el1.age - el2.age
-});
+
 
 
 
