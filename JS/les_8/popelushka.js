@@ -47,7 +47,15 @@ let arrPrinss = [Roman,Taras,Dimas,Nazar,Viktor];
 
 
 
+let one = [];
 
+
+arrPrinss.forEach(() =>{
+
+    
+
+
+});
 
 
 
