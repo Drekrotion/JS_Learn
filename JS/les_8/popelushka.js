@@ -44,27 +44,11 @@ let Viktor = new Prinss('Viktor', 23, 36.5);
 
 let arrPopelushka = [Oksana,Anna,Solomia,Vika,Natalia];
 let arrPrinss = [Roman,Taras,Dimas,Nazar,Viktor];
-let sum = [];
 
 
 
-// let sum =  arrPrinss.map(function (value) {
-//
-//
-//     console.log(value.tyfla);
-//
-// });
 
 
-for (i = 0, j = 0, i < arrPopelushka.length, j < arrPrinss.length; i++, j++;){
-    if ((arrPopelushka.map(value => value.size)) === (arrPrinss.map(value1 => value.tyfla))){
-        sum.push(22)
-    }
 
-
-}
-
-
-console.log(sum);
 
 
