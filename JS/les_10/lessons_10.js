@@ -58,7 +58,7 @@ function goHome() {
     return new Promise(function (resolve) {
         setTimeout(() => {
             resolve('I go Home')
-        },10000)
+        }, 1000)
     })
 }
 
@@ -70,9 +70,25 @@ async function aaa() {
     console.log(two);
     let thee = await goHome();
     console.log(thee);
-
 }
 
 aaa();
+
+
+// function f(a, b,) {
+//     let res = a + b;
+//     return new Promise(function (resolve) {
+//         setTimeout(() => {
+//             resolve(res)
+//         }, 1000)
+//     });
+// }
+//
+// f(5, 10)
+//     .then(value => {
+//         console.log(value);
+//     });
+
+
 
 
