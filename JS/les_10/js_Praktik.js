@@ -34,36 +34,36 @@
 //     return x
 // }
 
+// let str = 'Hello World';
+// let i = 11;
+//
+//
+// function druk(str) {
+//
+//     let rand = parseInt(Math.random() * 500);
+//
+//     setTimeout(() => {
+//         if (i > 0) {
+//             console.clear();
+//             console.log(str.slice(str.length, 1));
+//             i--;
+//             druk(str)
+//         }
+//     }, rand);
+//
+//
+// }
+//
+// druk(str);
+//
+
+
+
 let str = 'Hello World';
-let i = 11;
-
-
-function druk(str) {
-
-    let rand = parseInt(Math.random() * 500);
-
-    setTimeout(() => {
-        if (i > 0) {
-            console.clear();
-            console.log(str.slice(str.length, 1));
-            i--;
-            druk(str)
-        }
-    }, rand);
-
-
-}
-
-druk(str);
+let i = 1;
 
 
 
-
-
-
-
-
-/*
 function druk(str) {
 
     let rand = parseInt(Math.random() * 500);
@@ -81,7 +81,6 @@ function druk(str) {
 }
 
 druk(str);
-*/
 
 
 
