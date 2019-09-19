@@ -212,9 +212,32 @@ hidden
     let btn2 = document.getElementById('bunt2');
     let [divka] = document.getElementsByClassName('bigDiv2');
 
-    btn1.onclick = () => {
-        divka.style.left = '-300px'
+
+    let a = 0;
+    let pos = 30;
+
+    btn2.onclick = () => {
+        divka.style.right = `${a += pos}px`
     }
+
+    btn1.onclick = () => {
+        divka.style.right = `${a -= pos}px`
+    }
+
+    // btn2.onclick = () => {
+    //     divka.style.right = `${++a}px`;
+    // };
+
+
+
+    // btn1.onclick = () => {
+    //     divka.style.right = `${}`
+    // }
+
+
+    // btn2.onclick = () => {
+    //     divka.style.right = `${b+=b}px`
+    // }
 
 </script>
 
