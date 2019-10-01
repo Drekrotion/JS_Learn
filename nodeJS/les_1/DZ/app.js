@@ -17,3 +17,9 @@ createdStud('jscx-2000', 'Taras_Bosyi', 'Taras_Bosyi',
 
 
 sgsthsfth
+
+
+
+cbxb
+
+cb
