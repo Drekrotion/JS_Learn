@@ -15,11 +15,5 @@ createdStud('jscx-2000', 'Taras_Bosyi', 'Taras_Bosyi',
     {name: 'Taras', lastName: 'Bosyi', age: 29});
 
 
+console.log(24);
 
-sgsthsfth
-
-
-
-cbxb
-
-cb
