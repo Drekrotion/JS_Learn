@@ -15,23 +15,10 @@ exports.createdStud = function (whereFold, nameFoldersStudents, nameFile, dateSt
         if (!err) {
             console.log('createdStudFold!!!!!!!!!!!!!!!!!!!');
         }
-    });
-
-    setTimeout(()=> {
         let writeStreamFile = fs.createWriteStream(`./nodeJS/les_1/DZ/${whereFold}/${nameFoldersStudents}/${nameFile}.txt`);
         writeStreamFile.write(JSON.stringify(dateStudents))
-    },0);
-
+    });
 };
-
-
-
-// k.hjhv
-
-
-
-
-
 
 
 
